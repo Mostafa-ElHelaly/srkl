@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:srkl_new_v1/core/constance/app_router.dart';
+import 'package:srkl_new_v1/core/constance/app_size.dart';
+import 'package:srkl_new_v1/core/constance/color_assets.dart';
+import 'package:srkl_new_v1/core/constance/strings_assets.dart';
+import 'package:srkl_new_v1/presentation/view/widgets/appbar.dart';
+import 'package:srkl_new_v1/presentation/view/widgets/column_with_text.dart';
+import 'package:srkl_new_v1/presentation/view/widgets/elevated_button.dart';
+import 'package:srkl_new_v1/presentation/view/widgets/text_app.dart';
 
-import '../../../../core/constance/app_router.dart';
-import '../../../../core/constance/app_size.dart';
-import '../../../../core/constance/color_assets.dart';
-import '../../../../core/constance/strings_assets.dart';
-import '../../widgets/appbar.dart';
-import '../../widgets/column_with_text.dart';
-import '../../widgets/elevated_button.dart';
-import '../../widgets/text_app.dart';
+
 
 class ForgetPassword extends StatefulWidget {
   const ForgetPassword({super.key});

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../../../core/constance/color_assets.dart';
 
 class TextApp extends StatelessWidget {
   const TextApp({

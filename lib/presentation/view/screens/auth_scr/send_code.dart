@@ -1,15 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:pinput/pinput.dart';
-import 'package:srkl_new_v1/presentation/view/screens/auth_scr/login_screen.dart';
+import 'package:srkl_new_v1/core/constance/app_router.dart';
+import 'package:srkl_new_v1/core/constance/app_size.dart';
+import 'package:srkl_new_v1/core/constance/color_assets.dart';
+import 'package:srkl_new_v1/core/constance/strings_assets.dart';
+import 'package:srkl_new_v1/presentation/view/widgets/Button_with_text.dart';
+import 'package:srkl_new_v1/presentation/view/widgets/appbar.dart';
+import 'package:srkl_new_v1/presentation/view/widgets/elevated_button.dart';
+import 'package:srkl_new_v1/presentation/view/widgets/text_app.dart';
 
-import '../../../../core/constance/app_router.dart';
-import '../../../../core/constance/app_size.dart';
-import '../../../../core/constance/color_assets.dart';
-import '../../../../core/constance/strings_assets.dart';
-import '../../widgets/Button_with_text.dart';
-import '../../widgets/appbar.dart';
-import '../../widgets/elevated_button.dart';
-import '../../widgets/text_app.dart';
 
 class SendCode extends StatefulWidget {
   const SendCode({super.key});

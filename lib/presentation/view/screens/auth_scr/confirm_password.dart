@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
-import '../../../../core/constance/app_router.dart';
-import '../../../../core/constance/app_size.dart';
-import '../../../../core/constance/color_assets.dart';
-import '../../../../core/constance/strings_assets.dart';
-import '../../widgets/appbar.dart';
-import '../../widgets/elevated_button.dart';
-import '../../widgets/text_app.dart';
-import '../../widgets/text_fields.dart';
+import 'package:srkl_new_v1/core/constance/app_router.dart';
+import 'package:srkl_new_v1/core/constance/app_size.dart';
+import 'package:srkl_new_v1/core/constance/color_assets.dart';
+import 'package:srkl_new_v1/core/constance/strings_assets.dart';
+import 'package:srkl_new_v1/presentation/view/widgets/appbar.dart';
+import 'package:srkl_new_v1/presentation/view/widgets/elevated_button.dart';
+import 'package:srkl_new_v1/presentation/view/widgets/text_app.dart';
+import 'package:srkl_new_v1/presentation/view/widgets/text_fields.dart';
+
 
 class ConfirmPassword extends StatefulWidget {
   const ConfirmPassword({super.key});

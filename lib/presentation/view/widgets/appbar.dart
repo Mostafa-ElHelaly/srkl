@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import '../../../core/constance/app_size.dart';
-import '../../../core/constance/color_assets.dart';
-import 'text_app.dart';
+import 'package:srkl_new_v1/core/constance/app_size.dart';
+import 'package:srkl_new_v1/core/constance/color_assets.dart';
+import 'package:srkl_new_v1/presentation/view/widgets/text_app.dart';
+
 
 class ApplicationToolbar extends StatelessWidget
     implements PreferredSizeWidget {

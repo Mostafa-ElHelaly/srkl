@@ -1,16 +1,17 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
+import 'package:srkl_new_v1/core/constance/app_router.dart';
+import 'package:srkl_new_v1/core/constance/app_size.dart';
+import 'package:srkl_new_v1/core/constance/color_assets.dart';
+import 'package:srkl_new_v1/core/constance/images_asset.dart';
+import 'package:srkl_new_v1/core/constance/strings_assets.dart';
+import 'package:srkl_new_v1/presentation/view/widgets/Button_with_text.dart';
+import 'package:srkl_new_v1/presentation/view/widgets/elevated_button.dart';
+import 'package:srkl_new_v1/presentation/view/widgets/text_app.dart';
+import 'package:srkl_new_v1/presentation/view/widgets/text_fields.dart';
 
-import '../../../../core/constance/app_router.dart';
-import '../../../../core/constance/app_size.dart';
-import '../../../../core/constance/color_assets.dart';
-import '../../../../core/constance/images_asset.dart';
-import '../../../../core/constance/strings_assets.dart';
-import '../../widgets/Button_with_text.dart';
-import '../../widgets/elevated_button.dart';
-import '../../widgets/text_app.dart';
-import '../../widgets/text_fields.dart';
+
 
 class LogInScreen extends StatefulWidget {
   const LogInScreen({super.key});

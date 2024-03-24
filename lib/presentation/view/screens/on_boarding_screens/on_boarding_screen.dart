@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:onboarding_intro_screen/onboarding_screen.dart';
+import 'package:srkl_new_v1/core/constance/app_router.dart';
 import 'package:srkl_new_v1/core/constance/color_assets.dart';
-import 'package:srkl_new_v1/presentation/view/screens/auth_scr/login_screen.dart';
-
-import '../../../../core/constance/app_router.dart';
-import '../../../../core/constance/images_asset.dart';
-import '../../../../core/constance/strings_assets.dart';
+import 'package:srkl_new_v1/core/constance/images_asset.dart';
+import 'package:srkl_new_v1/core/constance/strings_assets.dart';
 
 class OnboardingIntroScreen extends StatefulWidget {
   const OnboardingIntroScreen({super.key});

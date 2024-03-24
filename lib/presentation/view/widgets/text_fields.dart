@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:srkl_new_v1/core/constance/color_assets.dart';
 
-import '../../../core/constance/color_assets.dart';
 
-class TextFields extends StatefulWidget {
+class TextFields extends StatelessWidget {
   const TextFields({
     super.key,
     this.sIcon,
@@ -29,25 +29,20 @@ class TextFields extends StatefulWidget {
   final void Function()? onTap;
 
   @override
-  State<TextFields> createState() => _TextFieldsState();
-}
-
-class _TextFieldsState extends State<TextFields> {
-  @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: widget.height,
-      width: widget.width,
+      height: height,
+      width: width,
       child: TextField(
-        controller: widget.controller,
-        onTap: widget.onTap,
-        readOnly: widget.readOnly,
-        obscureText: widget.obscureText,
+        controller: controller,
+        onTap: onTap,
+        readOnly: readOnly,
+        obscureText: obscureText,
         cursorColor: ColorAsset.mainColor,
         decoration: InputDecoration(
-          hintText: widget.text,
-          suffixIcon: widget.sIcon,
-          prefixIcon: widget.pIcon,
+          hintText: text,
+          suffixIcon: sIcon,
+          prefixIcon: pIcon,
           contentPadding:
               const EdgeInsets.symmetric(vertical: 2, horizontal: 10),
           fillColor: const Color.fromRGBO(246, 246, 246, 1).withOpacity(.5),
@@ -55,7 +50,7 @@ class _TextFieldsState extends State<TextFields> {
           focusedBorder: const OutlineInputBorder(
             borderSide: BorderSide(color: ColorAsset.mainColor),
           ),
-          border: OutlineInputBorder(borderSide: widget.border),
+          border: OutlineInputBorder(borderSide: border),
         ),
       ),
     );
