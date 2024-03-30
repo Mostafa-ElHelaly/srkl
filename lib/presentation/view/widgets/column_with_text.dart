@@ -4,9 +4,7 @@ import 'package:srkl_new_v1/core/constance/color_assets.dart';
 import 'package:srkl_new_v1/presentation/view/widgets/text_app.dart';
 import 'package:srkl_new_v1/presentation/view/widgets/text_fields.dart';
 
-
-
-class ColumnWithFieldText extends StatelessWidget {
+class ColumnWithFieldText extends StatefulWidget {
   const ColumnWithFieldText(
       {super.key, required this.text, required this.width, this.controller});
 
@@ -15,13 +13,18 @@ class ColumnWithFieldText extends StatelessWidget {
   final TextEditingController? controller;
 
   @override
+  State<ColumnWithFieldText> createState() => _ColumnWithFieldTextState();
+}
+
+class _ColumnWithFieldTextState extends State<ColumnWithFieldText> {
+  @override
   Widget build(BuildContext context) {
     return Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-      TextApp(text: text, fontSize: AppSize.defaultSize! * 1.4),
+      TextApp(text: widget.text, fontSize: AppSize.defaultSize! * 1.4),
       TextFields(
-        controller: controller,
+        controller: widget.controller,
         border: const BorderSide(width: 0, color: ColorAsset.mainColor),
-        width: width,
+        width: widget.width,
         height: AppSize.defaultSize! * 4,
       )
     ]);

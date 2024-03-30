@@ -11,8 +11,6 @@ import 'package:srkl_new_v1/presentation/view/widgets/elevated_button.dart';
 import 'package:srkl_new_v1/presentation/view/widgets/text_app.dart';
 import 'package:srkl_new_v1/presentation/view/widgets/text_fields.dart';
 
-
-
 class LogInScreen extends StatefulWidget {
   const LogInScreen({super.key});
 
@@ -123,6 +121,9 @@ class _LogInScreenState extends State<LogInScreen> {
                                 width: 1, color: ColorAsset.mainColor),
                           ),
                         ),
+
+
+
                         Padding(
                           padding: EdgeInsets.symmetric(
                             horizontal: AppSize.defaultSize! * 1.8,
@@ -150,6 +151,8 @@ class _LogInScreenState extends State<LogInScreen> {
                             ),
                           ),
                         ),
+
+
                         Padding(
                           padding: EdgeInsets.symmetric(
                               horizontal: AppSize.defaultSize! * 2.5,
@@ -175,7 +178,8 @@ class _LogInScreenState extends State<LogInScreen> {
                           child: SizedBox(
                             child: CustomElevatedButton(
                               onTap: () {
-                                Navigator.pushNamed(context, Routes.onboardingIntroScreen);
+                                Navigator.pushNamed(
+                                    context, Routes.onboardingIntroScreen);
                               },
                               shape: MaterialStatePropertyAll(
                                 ContinuousRectangleBorder(

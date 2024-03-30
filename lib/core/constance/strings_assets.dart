@@ -1,4 +1,5 @@
 class AssetString {
+
   static const String login = 'Login';
   static const String phoneNumber = 'Phone Number';
   static const String skipLogin = 'Skip Login';

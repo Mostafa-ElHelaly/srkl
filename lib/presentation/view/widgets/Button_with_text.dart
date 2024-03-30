@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class CostumTextButton extends StatelessWidget {
+class CostumTextButton extends StatefulWidget {
   const CostumTextButton(
       {super.key,
       required this.text,
@@ -20,18 +20,23 @@ class CostumTextButton extends StatelessWidget {
   final void Function()? onTap;
 
   @override
+  State<CostumTextButton> createState() => _CostumTextButtonState();
+}
+
+class _CostumTextButtonState extends State<CostumTextButton> {
+  @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: onTap,
+      onTap: widget.onTap,
       child: Text(
-        text,
+        widget.text,
         style: TextStyle(
-            decoration: textUnderLine,
-            decorationColor: textUnderLineColor,
-            backgroundColor: backgroundColor,
-            color: textColor,
-            // fontFamily: ColorAsset.mainFont,
-            fontSize: textSize),
+            decoration: widget.textUnderLine,
+            decorationColor: widget.textUnderLineColor,
+            backgroundColor: widget.backgroundColor,
+            color: widget.textColor,
+            fontFamily: 'Poppins',
+            fontSize: widget.textSize),
       ),
     );
   }

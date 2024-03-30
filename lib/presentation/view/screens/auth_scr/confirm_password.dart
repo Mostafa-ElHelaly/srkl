@@ -22,7 +22,6 @@ class _confirmPassword extends State<ConfirmPassword> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: const ApplicationToolbar(text: AssetString.forgetPassword),
       body: Padding(
         padding: EdgeInsets.all(AppSize.defaultSize! * 1.4),
         child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class CustomElevatedButton extends StatelessWidget {
+class CustomElevatedButton extends StatefulWidget {
   const CustomElevatedButton({
     super.key,
     required this.text,
@@ -21,24 +21,29 @@ class CustomElevatedButton extends StatelessWidget {
   final void Function()? onTap;
 
   @override
+  State<CustomElevatedButton> createState() => _CustomElevatedButtonState();
+}
+
+class _CustomElevatedButtonState extends State<CustomElevatedButton> {
+  @override
   Widget build(BuildContext context) {
     return ElevatedButton(
       style: ButtonStyle(
-        shape: shape,
-        backgroundColor: MaterialStatePropertyAll(bGColor),
+        shape: widget.shape,
+        backgroundColor: MaterialStatePropertyAll(widget.bGColor),
       ),
-      onPressed: onTap,
+      onPressed: widget.onTap,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           Text(
-            text,
+            widget.text,
             style: TextStyle(
-                backgroundColor: backgroundColor,
-                color: textColor,
-                // fontFamily: Asset.mainFont,
+                backgroundColor: widget.backgroundColor,
+                color: widget.textColor,
+                fontFamily: 'Poppins',
                 fontWeight: FontWeight.bold,
-                fontSize: textSize),
+                fontSize: widget.textSize),
           ),
         ],
       ),

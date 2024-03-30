@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 
-class TextApp extends StatelessWidget {
+class TextApp extends StatefulWidget {
   const TextApp({
     super.key,
     required this.text,
@@ -18,15 +18,20 @@ class TextApp extends StatelessWidget {
   final Color? bGColor;
 
   @override
+  State<TextApp> createState() => _TextAppState();
+}
+
+class _TextAppState extends State<TextApp> {
+  @override
   Widget build(BuildContext context) {
     return Text(
-      text,
+      widget.text,
       style: TextStyle(
-        backgroundColor: bGColor,
-        color: color,
-        fontSize: fontSize,
-        // fontFamily: ColorAsset.mainFont,
-        fontWeight: fontWeight,
+        backgroundColor: widget.bGColor,
+        color: widget.color,
+        fontSize: widget.fontSize,
+        fontFamily: 'Poppins',
+        fontWeight: widget.fontWeight,
       ),
     );
   }
